@@ -7,7 +7,7 @@ Odoo module maps; no code was copied from them, from ISHAN Detailing OS,
 or from any other product.
 
 > **Status: sample / demo — not production-ready.** The four modules below
-> work end to end against a real Supabase project. Stock posting on PO
+> are designed to run against a real Supabase project. Stock posting on PO
 > receipt / SO shipment, GST, ledger accounting and payroll are not built
 > (see "Not yet implemented"). All seed data is fictional demo data.
 
@@ -65,19 +65,6 @@ npm run build
 - Invoice generation from a sales order, and recording a payment from the UI (payments are seeded; finance page is read-only for now)
 - Roles inside a tenant, audit log, search/pagination, automated tests
 - GST rates/tax calculation, ledger, HR/payroll, manufacturing — all out of scope for this slice
-
-## Internal pricing (INTERNAL ONLY — never publish on the portfolio)
-
-Planning prices for a client build based on this sample:
-
-- **Basic — ₹70,000:** the 4 modules in this sample, one tenant, one location, demo-data import, setup on the client's Supabase project
-- **Standard — ₹1,10,000:** everything in Basic, plus PO-receipt and SO-shipment stock posting, invoice generation from sales orders, payment recording in the UI, low-stock alerts, CSV import/export
-- **Premium — ₹1,60,000:** everything in Standard, plus roles and permissions, multi-location stock, GST-ready invoicing, reports and dashboards, training and 30 days of support
-
-Prices are starting points for a quote; confirm scope and price with the
-client in writing before work starts. 50% advance is the usual pattern for
-custom builds (confirm per client). HR, payroll and manufacturing are
-quoted separately, not included in these tiers.
 
 ## Tech
 
