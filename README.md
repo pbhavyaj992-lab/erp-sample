@@ -73,3 +73,9 @@ TypeScript, React, Next.js 14 (App Router), Tailwind CSS, Supabase
 `@supabase/supabase-js`. Built by Bhavya Patel — B.Tech Computer Science
 and Design, GCET Anand; Master of Business Analytics, Deakin University,
 GIFT City.
+
+## What I would do differently
+
+- This SQL has never been run against a live Supabase project. I would run `schema.sql` and `seed.sql` in a free project and verify tenant isolation with two real auth users, as was done for the CRM and Marketplace samples on 13 Nov 2026.
+- Stock is not posted automatically when a PO is marked received or a sales order is shipped; it is a manual adjustment on /inventory. I would wire that posting up next, since the negative-stock trigger is already in place.
+- Purchase-order lines can only be seeded, not created from the UI, and invoice generation and payment recording from the UI are missing. I would build those flows before showing this to a paying client.
